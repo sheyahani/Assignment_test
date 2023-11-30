@@ -19,43 +19,40 @@
               margin: auto;
           }
           .container {
-        position: relative;
-        width: 800px;
+        display: flex;
+        align-items: center;
+        max-width: 800px;
         height: 50px;
         background-color: #3a3a40; ; /* Rectangle color */
         margin: auto;
          
       }
-          .button {
-        position: absolute;
-        transform: translate(-50%, -50%);
-        padding: 10px;
+      .button {
+        display: inline-flex;
+        align-items: center;
         background-color: transparent; /* Button background color */
         border: none;
         cursor: pointer;
+        outline: none;
       }
-      .button img {
-        max-width: 100%;
-        max-height: 100%;
-      } 
+      
       </style>
   </head>
   <body>
       <div class="container" >
-        
-          <button class="button" onclick="bold()" style="top: 50%; left: 27.5%; width:70%; height: 70%;">
-            <img src="Resources/bold-xxl.png" alt="Image Button">
+          <button class="button" onclick="bold()">
+            <img src="Resources/bold-xxl.png" alt="Image Button" width="20">
           </button> 
-          <button class="button" onclick="nderline()" style="top: 55%; left: 32.5%; width:85%; height:85%;">
+          <!-- <button class="button" onclick="nderline()">
               <img src="Resources/format_underline_white_192x192.png" alt="Image Button">
             </button>
-            <button class="button" onclick="italic()" style="top: 50%; left: 37.5%; width:70%; height:70%;">
+            <button class="button" onclick="italic()">
               <img src="Resources/italic-xxl.png" alt="Image Button">
             </button>
-            <button class="button" onclick="textColor()" style="top: 50%; left: 42.5%; width:75%; height:75%;">
+            <button class="button" onclick="textColor()">
               <img src="Resources/color.png" alt="Image Button">
             </button>
-            <button class="button" onclick="leftAlign()" style="top: 50%; left: 47.5%; width:80%; height:80%;">
+            <button class="button" onclick="leftAlign()">
               <img src="Resources/left.png" alt="Image Button">
             </button>
             <button class="button" onclick="ceneter()" style="top: 50%; left: 52.5%; width:80%; height:80%;">
@@ -72,7 +69,7 @@
             </button>
             <button class="button" onclick="redo()" style="top: 50%; left: 72.5%; width:85%; height:85%;">
               <img src="Resources/action-redo-32.png" alt="Image Button">
-            </button>
+            </button> -->
       </div>
        
        
@@ -82,6 +79,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
 <!-- Author: [W.A.K.S.UPEKKA] | [CT_2019_039] -->
 </html>
