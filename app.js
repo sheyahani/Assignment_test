@@ -9,3 +9,11 @@ function underline() {
 function italic() {
     document.execCommand('italic', true, null)
 }
+
+function textColor() {
+    var fontColor = prompt('Enter color code (e.g., red):');
+    if (fontColor) {
+      document.execCommand('styleWithCSS', false, true);
+      document.execCommand('foreColor', false, fontColor);
+    }
+  }
