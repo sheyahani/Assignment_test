@@ -17,3 +17,7 @@ function textColor() {
       document.execCommand('foreColor', false, fontColor);
     }
   }
+
+  function leftAlign() {
+    document.execCommand('justifyLeft', false, null);
+  }
