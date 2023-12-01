@@ -29,3 +29,8 @@ function textColor() {
   function rightAlign() {
     document.execCommand('justifyRight', false, null);
   }
+
+  function justify() {
+    document.execCommand('justifyFull', false, null);
+  }
+
