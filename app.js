@@ -34,3 +34,8 @@ function textColor() {
     document.execCommand('justifyFull', false, null);
   }
 
+  function undo() {
+    document.execCommand('undo', false, null);
+  }
+
+
