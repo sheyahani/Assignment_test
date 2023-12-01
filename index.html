@@ -9,26 +9,78 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Text Editor - [Your Student Number]</title>
-</head>
-
-<body>
-
-    <!--  Remove this div once you are started -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Start Your Work Here!</h1>
-                <hr>
-            </div>
-        </div>
-    </div>
-    
+    <title>Text Editor - [CT_2019_039]</title>
+    <style>
+        #editor {
+              width: 800px;
+              height: 400px;
+              border: 1px solid #ccc;
+              padding: 10px;
+              margin: auto;
+          }
+          .container {
+        display: flex;
+        gap: 48px;
+        align-items: justify;
+        max-width: 800px;
+        height: 50px;
+        background-color: #3a3a40; ; /* Rectangle color */
+        margin: auto;
+         
+      }
+      .button {
+        display: inline-flex;
+        align-items: center;
+        background-color: transparent; /* Button background color */
+        border: none;
+        cursor: pointer;
+        outline: none;
+      }
+      
+      </style>
+  </head>
+  <body>
+      <div class="container" >
+          <button class="button" onclick="bold()">
+            <img src="Resources/bold-xxl.png" alt="Image Button" width="15">
+          </button> 
+            <button class="button" onclick="underline()">
+              <img src="Resources/format_underline_white_192x192.png" width="25" alt="Image Button">
+            </button>
+            <button class="button" onclick="italic()">
+              <img src="Resources/italic-xxl.png"  width="15" alt="Image Button">
+            </button>
+            <button class="button" onclick="textColor()">
+              <img src="Resources/color.png"  width="20" alt="Image Button">
+            </button>
+            <button class="button" onclick="leftAlign()">
+              <img src="Resources/left.png" width="20" alt="Image Button">
+            </button>
+            <button class="button" onclick="ceneter()">
+              <img src="Resources/center.png" width="20" alt="Image Button">
+            </button>
+            <button class="button" onclick="rightAlign()">
+              <img src="Resources/right.png" width="20" alt="Image Button">
+            </button>
+            <button class="button" onclick="justify()">
+              <img src="Resources/justify.png" width="20" alt="Image Button">
+            </button>
+            <button class="button" onclick="undo()" >
+              <img src="Resources/undo-4-32.png" width="20" alt="Image Button">
+            </button>
+            <button class="button" onclick="redo()">
+              <img src="Resources/action-redo-32.png" width="20" alt="Image Button">
+            </button> 
+      </div>
+       
+       
+      <div id="editor" contenteditable="true">Type here</div>
     
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
-<!-- Author: [Your Name] | [Your Student Number] -->
+<!-- Author: [W.A.K.S.UPEKKA] | [CT_2019_039] -->
 </html>
