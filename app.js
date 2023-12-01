@@ -21,3 +21,7 @@ function textColor() {
   function leftAlign() {
     document.execCommand('justifyLeft', false, null);
   }
+
+  function ceneter() {
+    document.execCommand('justifyCenter', false, null);
+  }
